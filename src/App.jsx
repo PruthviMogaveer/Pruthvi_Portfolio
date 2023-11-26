@@ -1,7 +1,12 @@
+import { DarkModeToggle } from "./components";
+import Footer from "./components/footer/Footer";
+
 function App() {
   return (
     <>
-      <h1 className="">Portfolio</h1>
+      <header />
+
+      <Footer />
     </>
   );
 }

@@ -28,17 +28,17 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bottom-0 w-screen bg-primary flex flex-wrap justify-between items-center py-20 px-56">
-      <div className="self-start flex flex-col flex-wrap space-y-2">
-        <h2 className="text-white font-extrabold text-xl cursor-pointer">
+    <footer className="relative w-screen bg-primary flex flex-wrap justify-between max-sm:justify-center items-center py-14 max-md:py-8 px-56 max-sm:px-20">
+      <div className="self-start flex flex-col flex-wrap space-y-2 px-10 py-5">
+        <h2 className="text-white font-extrabold text-xl cursor-pointer max-sm:text-center max-lg:w-52">
           <Link to="/">Pruthvi Mogaveer</Link>
         </h2>
-        <h3 className="text-white font-normal text-sm cursor-pointer">
+        <h3 className="text-white font-normal text-sm cursor-pointer max-sm:text-center">
           <Link to="/">Frontend developer</Link>
         </h3>
       </div>
-      <div className="">
-        <ul className="flex flex-wrap flex-col space-y-2">
+      <div className="px-10 py-5 max-sm:flex">
+        <ul className="flex flex-wrap flex-col space-y-2 max-sm:justify-center max-sm:items-center">
           {footerItems.map((item) => (
             <li key={item.id}>
               <Link
@@ -51,7 +51,7 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <div className="self-start flex flex-col space-y-5">
+      <div className="self-start flex flex-col space-y-5 px-10 py-5">
         <ul className=" flex flex-wrap space-x-6 ">
           <li className="text-white text-lg cursor-pointer hover:text-secondary hover:scale-125 transition-all duration-300">
             <Link to="https://www.instagram.com/pruthvi__18/">

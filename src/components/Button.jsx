@@ -4,7 +4,7 @@ const Button = ({
   bgColor = "bg-primary",
   type = "submit",
   children,
-  textColor = "text-white",
+  textColor = "text-lightwhite",
   className,
   ...props
 }) => {

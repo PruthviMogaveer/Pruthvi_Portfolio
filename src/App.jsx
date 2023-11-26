@@ -4,7 +4,7 @@ import { Footer, Header } from "./components";
 function App() {
   return (
     <>
-      <div className="fixed">dfav
+      <div className="fixed top-0 z-10">
         <Header />
       </div>
       <div className="relative w-full min-h-screen">

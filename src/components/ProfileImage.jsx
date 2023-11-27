@@ -5,7 +5,7 @@ const ProfileImage = () => {
   return (
     <div>
       <svg
-        className="w-[200px] fill-primary"
+        className="max-md:w-[250px] max-lg:w-[200px] max-xl:w-[220px] xl:w-[280px] fill-primary"
         viewBox="0 0 200 187"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

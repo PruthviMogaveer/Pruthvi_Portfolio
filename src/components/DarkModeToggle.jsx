@@ -38,7 +38,7 @@ const DarkModeToggle = () => {
             width="16"
             height="16"
             viewBox="0 0 16 16"
-            className="mx-1 fill-current"
+            className="mx-1 fill-current hover:scale-110"
           >
             <g clipPath="url(#clip0_3122_652)">
               <path
@@ -66,7 +66,7 @@ const DarkModeToggle = () => {
             width="16"
             height="16"
             viewBox="0 0 16 16"
-            className="mx-1 fill-current"
+            className="mx-1 fill-current hover:scale-110"
           >
             <path
               fillRule="evenodd"

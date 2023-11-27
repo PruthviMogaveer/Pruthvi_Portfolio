@@ -1,19 +1,36 @@
 import { Outlet } from "react-router-dom";
-import { Footer, Header } from "./components";
+import { Footer, Header, Hero } from "./components";
 
 function App() {
   return (
-    <>
-      <div className="fixed top-0 z-10">
+    <div className="w-full">
+      <div className="w-full fixed md:top-0 max-md:bottom-0 max-md:bg-lightwhite bg-white dark:bg-secondary dark:max-md:bg-secondary max-md:rounded-t-xl max-md:shadow-menu dark:max-md:shadow-darkmenu z-10">
         <Header />
       </div>
       <div className="relative w-full min-h-screen">
-        <Outlet />
+        <section id="home" className="h-[36rem]">
+          <Hero />
+        </section>
+        <section id="about" className="">
+          jhb
+        </section>
+        <section id="resume" className="">
+          fdk
+        </section>
+        <section id="skills" className="">
+          fdk
+        </section>
+        <section id="portfolio" className="">
+          fdk
+        </section>
+        <section id="contact-me" className="">
+          fdk
+        </section>
       </div>
       <div className="relative">
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

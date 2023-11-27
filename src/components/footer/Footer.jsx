@@ -28,7 +28,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative w-screen bg-primary flex flex-wrap justify-between max-sm:justify-center items-center py-14 max-md:py-8 px-56 max-sm:px-20">
+    <footer className="transition-all duration-1000 relative w-screen bg-primary flex flex-wrap justify-between max-md:pb-28 max-sm:justify-center items-center py-14 max-md:py-8 px-56 max-lg:px-0 max-xl:px-28">
       <div className="self-start flex flex-col flex-wrap space-y-2 px-10 py-5">
         <h2 className="text-lightwhite font-extrabold text-xl cursor-pointer max-sm:text-center max-lg:w-52">
           <Link to="/">Pruthvi Mogaveer</Link>

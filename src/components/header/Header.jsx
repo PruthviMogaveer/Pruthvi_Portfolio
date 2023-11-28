@@ -6,8 +6,20 @@ import useWindowWidth from "../../hooks/useWindowWidth";
 import { navItems } from "../../constant/constant";
 
 const Header = () => {
-   const windowWidth = useWindowWidth();
+  const windowWidth = useWindowWidth();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [offset, setOffset] = useState();
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (windowWidth > 768) {
+        setOffset(-100);
+      } else {
+        setOffset(0);
+      }
+    }, 2000);
+  }, [windowWidth]);
 
   const [scroll, setScroll] = useState(false);
   const navShadow = () => {
@@ -51,7 +63,7 @@ const Header = () => {
                   to={item.id}
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={offset}
                   duration={500}
                   activeClass=" text-[#6E58E0] dark:text-[#6E58E0] border-b-2 border-[#6E58E0] transition-all duration-100 text-base font-medium"
                   className={`cursor-pointer text-secondary dark:text-lightwhite hover:text-primary dark:hover:text-primary transition-all duration-100 text-base font-medium

@@ -10,9 +10,9 @@
       slug: "/about",
     },
     {
-      id: "resume",
-      name: "Resume",
-      slug: "/resume",
+      id: "education",
+      name: "Education",
+      slug: "/education",
     },
     {
       id: "skills",
@@ -49,4 +49,17 @@
     },
   ];
 
-  export {navItems, footerItems}
+  const educations = [
+    {
+      collage: "CMR Institute of Technology, Bangalore",
+      degree: "Master of Computer Applications (MCA)",
+      year: "2021 - 2023",
+    },
+    {
+      collage: "Milagres College, Kallianpur, Udupi",
+      degree: "Bachelor of Computer Applications (BCA)",
+      year: "2018 - 2021",
+    },
+  ];
+
+  export {navItems, footerItems, educations}

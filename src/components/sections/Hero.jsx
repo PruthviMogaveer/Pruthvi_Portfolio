@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button, ProfileImage } from "../";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,12 +12,23 @@ import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import { Link } from "react-scroll";
 
 const Hero = () => {
-  const windoWidth = useWindowWidth();
+  const windowWidth = useWindowWidth();
+  const [offset, setOffset] = useState();
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (windowWidth > 768) {
+        setOffset(-100);
+      } else {
+        setOffset(0);
+      }
+    }, 2000);
+  }, [windowWidth]);
 
   return (
     <div className=" flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-start items-center relative px-64 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000">
       <div className="flex flex-row justify-start space-x-10 items-center px-10 w-[32rem] max-lg:w-[30rem] max-sm:w-96">
-        {windoWidth > 768 && (
+        {windowWidth > 768 && (
           <div>
             <ul className=" flex flex-col flex-wrap space-y-5 relative">
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
@@ -69,7 +80,7 @@ const Hero = () => {
             to="contact-me"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={offset}
             duration={500}
             activeClass=" text-[#6E58E0] dark:text-[#6E58E0] border-b-2 border-[#6E58E0] transition-all duration-100 text-base font-medium"
             className={`cursor-pointer text-secondary dark:text-lightwhite hover:text-primary dark:hover:text-primary transition-all duration-100 text-base font-medium
@@ -89,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="flex flex-row justify-start space-x-10 items-center max-md:w-[21rem]">
-        {windoWidth < 768 && (
+        {windowWidth < 768 && (
           <div>
             <ul className=" flex flex-col flex-wrap space-y-5 relative">
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">

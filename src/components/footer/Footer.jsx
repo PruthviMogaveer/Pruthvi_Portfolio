@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -8,9 +8,21 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "../";
 import { footerItems } from "../../constant/constant";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const Footer = () => {
+  const windowWidth = useWindowWidth()
+  const [offset, setOffset] = useState() 
   
+  useEffect(() => {
+    setTimeout(() => {if(windowWidth > 768){
+      setOffset(-100)
+    }else{
+      setOffset(0)
+    }},2000)
+    
+  }, [windowWidth])
+
   return (
     <footer className="transition-all duration-1000 relative w-screen bg-primary flex flex-wrap justify-between max-md:pb-28 max-sm:justify-center items-center py-14 max-md:py-8 px-56 max-lg:px-0 max-xl:px-28">
       <div className="self-start flex flex-col flex-wrap space-y-2 px-10 py-5">
@@ -32,7 +44,7 @@ const Footer = () => {
               <Link
                 to={item.id}
                 smooth={true}
-                offset={-100}
+                offset={offset}
                 duration={500}
                 className="text-lightwhite font-semibold cursor-pointer hover:text-secondary transition-all duration-500"
               >

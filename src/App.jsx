@@ -1,4 +1,4 @@
-import { About, Footer, Header, Hero } from "./components";
+import { About, Education, Footer, Header, Hero } from "./components";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <section id="about" className="h-full ">
           <About/>
         </section>
-        <section id="resume" className="">
-          fdk
+        <section id="education" className="h-full">
+          <Education />
         </section>
         <section id="skills" className="">
           fdk

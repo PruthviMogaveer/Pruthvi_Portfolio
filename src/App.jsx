@@ -1,5 +1,4 @@
-import { Outlet } from "react-router-dom";
-import { Footer, Header, Hero } from "./components";
+import { About, Footer, Header, Hero } from "./components";
 
 function App() {
   return (
@@ -7,12 +6,12 @@ function App() {
       <div className="w-full fixed md:top-0 max-md:bottom-0 max-md:bg-lightwhite bg-white dark:bg-secondary dark:max-md:bg-secondary max-md:rounded-t-xl max-md:shadow-menu dark:max-md:shadow-darkmenu z-10">
         <Header />
       </div>
-      <div className="relative w-full min-h-screen">
-        <section id="home" className="h-[36rem]">
+      <div className="relative w-full min-h-screen flex flex-col space-y-20">
+        <section id="home" className="h-[36rem] ">
           <Hero />
         </section>
-        <section id="about" className="">
-          jhb
+        <section id="about" className="h-full ">
+          <About/>
         </section>
         <section id="resume" className="">
           fdk
@@ -27,7 +26,7 @@ function App() {
           fdk
         </section>
       </div>
-      <div className="relative">
+      <div id="footer" className="relative">
         <Footer />
       </div>
     </div>

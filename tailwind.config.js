@@ -4,8 +4,12 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
       colors: {
         primary: "#6E58E0",
+        primaryhover: "#8170db",
         secondary: "#191527",
         lightwhite: "#f4f7ff",
       },

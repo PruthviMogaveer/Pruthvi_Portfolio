@@ -3,43 +3,21 @@ import DarkModeToggle from "../DarkModeToggle";
 import { Link } from "react-scroll";
 import WidgetsOutlinedIcon from "@mui/icons-material/WidgetsOutlined";
 import useWindowWidth from "../../hooks/useWindowWidth";
+import { navItems } from "../../constant/constant";
 
 const Header = () => {
-  const navItems = [
-    {
-      id: "home",
-      name: "Home",
-      slug: "/",
-    },
-    {
-      id: "about",
-      name: "About",
-      slug: "/about",
-    },
-    {
-      id: "resume",
-      name: "Resume",
-      slug: "/resume",
-    },
-    {
-      id: "skills",
-      name: "Skills",
-      slug: "/skills",
-    },
-    {
-      id: "portfolio",
-      name: "Portfolio",
-      slug: "/portfolio",
-    },
-    {
-      id: "contact-me",
-      name: "Contact Me",
-      slug: "/contact-me",
-    },
-  ];
-
-  const windowWidth = useWindowWidth();
+   const windowWidth = useWindowWidth();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const [scroll, setScroll] = useState(false);
+  const navShadow = () => {
+    if (window.scrollY >= 10) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  window.addEventListener("scroll", navShadow);
 
   return (
     <header
@@ -47,7 +25,9 @@ const Header = () => {
         !menuOpen
           ? "max-md:h-20 transition-all duration-1000"
           : " max-md:h-56 transition-all duration-1000"
-      } relative px-56 max-xl:px-28 max-lg:px-0 flex flex-wrap justify-center items-center py-6 w-screen`}
+      } relative px-56 max-xl:px-28 max-lg:px-0 flex flex-wrap justify-center items-center py-6 w-screen ${
+        scroll && "md:shadow-menu dark:md:shadow-darkmenu"
+      }`}
     >
       <nav
         className={`flex flex-wrap justify-between w-full items-center px-10 ${
@@ -71,7 +51,7 @@ const Header = () => {
                   to={item.id}
                   spy={true}
                   smooth={true}
-                  offset={-100}
+                  offset={0}
                   duration={500}
                   activeClass=" text-[#6E58E0] dark:text-[#6E58E0] border-b-2 border-[#6E58E0] transition-all duration-100 text-base font-medium"
                   className={`cursor-pointer text-secondary dark:text-lightwhite hover:text-primary dark:hover:text-primary transition-all duration-100 text-base font-medium

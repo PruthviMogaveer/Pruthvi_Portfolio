@@ -76,31 +76,37 @@ const frontendSkills = [
     id: "html",
     desc: "HTML",
     icon: htmlIcon,
+    color: "border-orange-400",
   },
   {
     id: "css",
     desc: "CSS",
     icon: cssIcon,
+    color: "border-blue-600",
   },
   {
     id: "bootstrap",
     desc: "Bootstrap",
     icon: bootstrapIcon,
+    color: "border-primary",
   },
   {
     id: "tailwindcss",
     desc: "Tailwind css",
     icon: tailwindIcon,
+    color: "border-sky-400",
   },
   {
     id: "js",
     desc: "JS",
     icon: jsIcon,
+    color: "border-yellow-400",
   },
   {
     id: "react",
     desc: "React.js",
     icon: reactIcon,
+    color: "border-indigo-400",
   },
 ];
 

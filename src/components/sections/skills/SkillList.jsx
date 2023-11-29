@@ -3,7 +3,7 @@ import React from "react";
 const SkillList = ({ skill }) => {
   return (
     <>
-      <div className="flex max-sm:flex-col max-sm:h-24 max-sm:justify-center justify-start items-center rounded-md w-60 max-sm:w-32 shadow-skillbox relative mx-2 my-5 h-12 hover:scale-95 transition-all duration-300">
+      <div className={`border ${skill.color} flex max-sm:flex-col dark:bg-[#0e0c19] max-sm:h-24 max-sm:justify-center justify-start items-center rounded-md w-60 max-sm:w-32 shadow-skillbox relative mx-2 my-5 h-12 hover:scale-95 transition-all duration-300`}>
         <div className="px-4 py-2">
           <img
             src={skill.icon}

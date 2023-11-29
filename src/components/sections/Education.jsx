@@ -1,9 +1,9 @@
-import React from 'react'
-import { educations } from '../../constant/constant';
+import React from "react";
+import { educations } from "../../constant/constant";
 
 const Education = () => {
   return (
-    <div className="flex flex-col py-8 justify-center items-center px-64 max-lg:px-40 max-md:px-20 max-sm:px-8 ">
+    <div className="flex flex-col py-8 justify-center items-center px-64 max-lg:px-40 max-md:px-20 max-sm:px-8 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Education
@@ -35,6 +35,6 @@ const Education = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Education
+export default Education;

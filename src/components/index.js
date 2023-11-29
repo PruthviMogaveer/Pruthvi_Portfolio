@@ -6,6 +6,8 @@ import Footer from "./footer/Footer";
 import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Education from "./sections/Education";
+import Skills from "./sections/skills/Skills";
+import SkillList from "./sections/skills/SkillList";
 
 export {
   ProfileImage,
@@ -16,4 +18,6 @@ export {
   Hero,
   About,
   Education,
+  Skills,
+  SkillList,
 };

@@ -5,7 +5,7 @@ import resume from "../../assets/PruthviResume.pdf";
 
 const About = () => {
   return (
-    <div className="flex flex-col py-8 justify-center items-center px-80 max-lg:px-40 max-md:px-20 ">
+    <div className="flex flex-col py-8 justify-center items-center px-80 max-lg:px-40 max-md:px-20 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           About Me

@@ -5,6 +5,15 @@ import {
   jsIcon,
   reactIcon,
   tailwindIcon,
+  javaIcon,
+  pythonIcon,
+  vbIcon,
+  cIcon,
+  phpIcon,
+  mysqlIcon,
+  postgresIcon,
+  gitIcon,
+  appwriteIcon,
 } from "../assets";
 
 const navItems = [
@@ -92,7 +101,7 @@ const frontendSkills = [
   },
   {
     id: "tailwindcss",
-    desc: "Tailwind css",
+    desc: "Tailwindcss",
     icon: tailwindIcon,
     color: "border-sky-400",
   },
@@ -110,4 +119,75 @@ const frontendSkills = [
   },
 ];
 
-export { navItems, footerItems, educations, frontendSkills };
+const programmingLang = [
+  {
+    id: "java",
+    desc: "Java",
+    icon: javaIcon,
+    color: "border-red-400",
+  },
+  {
+    id: "python",
+    desc: "Python",
+    icon: pythonIcon,
+    color: "border-green-600",
+  },
+  {
+    id: "vb.net",
+    desc: "Vb.net",
+    icon: vbIcon,
+    color: "border-indigo-900",
+  },
+  {
+    id: "c",
+    desc: "C",
+    icon: cIcon,
+    color: "border-blue-800",
+  },
+  {
+    id: "php",
+    desc: "Php",
+    icon: phpIcon,
+    color: "border-slate-500",
+  },
+];
+
+const database = [
+  {
+    id: "mysql",
+    desc: "MySQL",
+    icon: mysqlIcon,
+    color: "border-yellow-300",
+  },
+  {
+    id: "postgresql",
+    desc: "PostgreSQL",
+    icon: postgresIcon,
+    color: "border-blue-400",
+  },
+];
+
+const otherSkills = [
+  {
+    id: "git",
+    desc: "git",
+    icon: gitIcon,
+    color: "border-red-800",
+  },
+  {
+    id: "appwrite",
+    desc: "Appwrite",
+    icon: appwriteIcon,
+    color: "border-pink-500",
+  },
+];
+
+export {
+  navItems,
+  footerItems,
+  educations,
+  frontendSkills,
+  programmingLang,
+  database,
+  otherSkills
+};

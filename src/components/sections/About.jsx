@@ -7,9 +7,9 @@ const About = () => {
   return (
     <div className="flex flex-col py-8 justify-center items-center px-80 max-lg:px-40 max-md:px-20 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
-        <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
+        <p className="text-2xl font-bold text-secondary dark:text-lightwhite">
           About Me
-        </h2>
+        </p>
         <h4 className="text-sm font-medium text-slate-700 dark:text-slate-400">
           My Introduction
         </h4>

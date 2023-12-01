@@ -8,9 +8,9 @@ const Education = () => {
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Education
         </h2>
-        <h4 className="text-sm font-medium text-slate-700 dark:text-slate-400">
+        <p className="text-sm font-medium text-slate-700 dark:text-slate-400">
           My recent qualifications
-        </h4>
+        </p>
       </div>
       <div className="relative lg:self-center flex space-x-40 max-md:space-x-20 max-md:self-center max-sm:space-x-12 self-start my-6">
         <div className="border-r-2 border-secondary dark:border-lightwhite relative h-[17.5rem] max-sm:h-[24rem] top-12"></div>

@@ -14,9 +14,9 @@ const Skills = () => {
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Skills
         </h2>
-        <h4 className="text-sm font-medium text-slate-700 dark:text-slate-400">
+        <p className="text-sm font-medium text-slate-700 dark:text-slate-400">
           My tech stack
-        </h4>
+        </p>
       </div>
       <div className="self-start mt-12 max-sm:shadow-skillbox max-sm:p-5 max-sm:rounded-md max-sm:w-full">
         <h3 className="text-lg self-start font-medium text-slate-700 dark:text-slate-300">

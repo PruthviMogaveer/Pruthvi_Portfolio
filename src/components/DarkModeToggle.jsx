@@ -22,6 +22,7 @@ const DarkModeToggle = () => {
       <input
         type="checkbox"
         id="darkmode"
+        aria-label="darkmode lightmode toggler"
         className=" w-[1px] h-[1px] absolute p-0 m-[-1px] overflow-hidden whitespace-nowrap"
         checked={darkMode}
         onChange={toggleDarkMode}

@@ -32,17 +32,26 @@ const Hero = () => {
           <div>
             <ul className=" flex flex-col flex-wrap space-y-5 relative">
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://www.instagram.com/pruthvi__18/">
+                <a
+                  href="https://www.instagram.com/pruthvi__18/"
+                  aria-label="Visit my instagram"
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://github.com/PruthviMogaveer">
+                <a
+                  href="https://github.com/PruthviMogaveer"
+                  aria-label="Visit my github"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://www.linkedin.com/in/pruthvi-mogaveer-52b47a205/">
+                <a
+                  href="https://www.linkedin.com/in/pruthvi-mogaveer-52b47a205/"
+                  aria-label="Visit my linkedin"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>
@@ -104,17 +113,26 @@ const Hero = () => {
           <div>
             <ul className=" flex flex-col flex-wrap space-y-5 relative">
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://www.instagram.com/pruthvi__18/">
+                <a
+                  href="https://www.instagram.com/pruthvi__18/"
+                  aria-label="Visit my instagram"
+                >
                   <FontAwesomeIcon icon={faInstagram} />
                 </a>
               </li>
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://github.com/PruthviMogaveer">
+                <a
+                  href="https://github.com/PruthviMogaveer"
+                  aria-label="Visit my github"
+                >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
               </li>
               <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
-                <a href="https://www.linkedin.com/in/pruthvi-mogaveer-52b47a205/">
+                <a
+                  href="https://www.linkedin.com/in/pruthvi-mogaveer-52b47a205/"
+                  aria-label="Visit my linkedin"
+                >
                   <FontAwesomeIcon icon={faLinkedin} />
                 </a>
               </li>

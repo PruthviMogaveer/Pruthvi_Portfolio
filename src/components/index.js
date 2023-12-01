@@ -7,7 +7,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import Education from "./sections/Education";
 import Skills from "./sections/skills/Skills";
-import SkillList from "./sections/skills/SkillList";
+import Portfolio from "./sections/Portfolio";
 
 export {
   ProfileImage,
@@ -19,5 +19,5 @@ export {
   About,
   Education,
   Skills,
-  SkillList,
+  Portfolio,
 };

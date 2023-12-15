@@ -14,6 +14,11 @@ import mysqlIcon from "./images/mysql.png";
 import postgresIcon from "./images/postgres.png";
 import gitIcon from "./images/git.png";
 import appwriteIcon from "./images/appwrite.jpeg";
+import blogsPoster from "./images/blogs_poster.png";
+import passwordGeneratorPoster from "./images/password_generator_poster.png";
+import fightingGamePoster from "./images/fighting_game_poster.png";
+import fushionShoesPoster from "./images/fusion_shoes_poster.png";
+import movieSitePoster from "./images/movie_site_poster.png";
 
 export {
   profile,
@@ -32,4 +37,9 @@ export {
   postgresIcon,
   gitIcon,
   appwriteIcon,
+  blogsPoster,
+  passwordGeneratorPoster,
+  fightingGamePoster,
+  fushionShoesPoster,
+  movieSitePoster,
 };

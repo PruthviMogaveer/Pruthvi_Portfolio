@@ -19,6 +19,8 @@ import {
   fightingGamePoster,
   fushionShoesPoster,
   movieSitePoster,
+  weatherAppPoster,
+  othersPoster,
 } from "../assets";
 
 // Nav items
@@ -198,30 +200,49 @@ const projects = [
     title: "Blogs",
     desc: "Explore our user-friendly blogsite, where you can effortlessly create, edit, and delete your posts. Dive into a community where diverse perspectives thrive, and share the joy of expression with others.",
     poster: blogsPoster,
+    url: "https://blogs-pi-two.vercel.app/",
   },
   {
     id: "passwordGenerator",
     title: "Password Generator",
     desc: "Explore our Password Generator and Saver website, where you can effortlessly generate strong, secure passwords and conveniently save them for future use. ",
     poster: passwordGeneratorPoster,
+    url: "https://password-generator-and-saver.vercel.app/",
   },
   {
     id: "fusionShoes",
     title: "Fusion Shoes",
     desc: "Fusion Shoes serves as the landing page for a prominent shoe company, Developed using React.js and Tailwind CSS, this static frontend page beautifully showcases the brand's offerings.",
     poster: fushionShoesPoster,
+    url: "https://fusion-shoes-landing-page.vercel.app/",
   },
   {
     id: "moviesite",
     title: "Movie Site",
     desc: "Explore a world of cinematic wonders on our movie site, crafted with JavaScript and enriched by a free movie API. Dive into an extensive collection.",
     poster: movieSitePoster,
+    url: "https://movie-site-pearl.vercel.app/",
+  },
+  {
+    id: "weatherApp",
+    title: "Weather App",
+    desc: "Experience weather updates at your fingertips with our JavaScript-powered Weather App site, utilizing the OpenWeather free API.",
+    poster: weatherAppPoster,
+    url: "https://weather-app-chi-six-66.vercel.app/",
   },
   {
     id: "fightingGame",
     title: "Fighting Game",
     desc: "Enjoy the Fighting Game created using javascript where you can attack or heal using simple keyboard controls. Dive into the action and experience strategic combat at your fingertips!",
     poster: fightingGamePoster,
+    url: "https://fighiting-game.vercel.app/",
+  },
+  {
+    id: "others",
+    title: "Others",
+    desc: "Explore many other projects on github.",
+    poster: othersPoster,
+    url: "https://github.com/PruthviMogaveer?tab=repositories",
   },
 ];
 

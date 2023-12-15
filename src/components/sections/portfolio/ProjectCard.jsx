@@ -6,15 +6,16 @@ const ProjectCard = () => {
     <>
       <ScrollCarousel autoplay autoplaySpeed={8} speed={7}>
         {projects.map((project) => (
-          <div
+          <a
             key={project.id}
             className="dark:bg-[#0e0c19] rounded-xl shadow-skillbox flex flex-col justify-start h-[11.5rem] w-64 overflow-hidden relative group mx-5 my-8"
+            href={project.url}
           >
             <div className="p-1 m-1 relative">
               <img
                 src={project.poster}
                 alt="a"
-                className="object-cover w-full h-[7.6rem] rounded-lg"
+                className="object-cover w-60 h-[7.6rem] rounded-lg"
               />
             </div>
             <div className="group-hover:-translate-y-20 transition-all duration-500 min-h-full group-hover:shadow-menu dark:group-hover:shadow-darkmenu group-hover:rounded-lg w-full bg-white dark:bg-[#0e0c19]">
@@ -25,7 +26,7 @@ const ProjectCard = () => {
                 {project.desc}
               </p>
             </div>
-          </div>
+          </a>
         ))}
       </ScrollCarousel>
     </>

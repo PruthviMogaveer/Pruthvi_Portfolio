@@ -19,6 +19,8 @@ import passwordGeneratorPoster from "./images/password_generator_poster.png";
 import fightingGamePoster from "./images/fighting_game_poster.png";
 import fushionShoesPoster from "./images/fusion_shoes_poster.png";
 import movieSitePoster from "./images/movie_site_poster.png";
+import weatherAppPoster from "./images/weather_app_poster.png";
+import othersPoster from "./images/others_poster.jpg";
 
 export {
   profile,
@@ -42,4 +44,6 @@ export {
   fightingGamePoster,
   fushionShoesPoster,
   movieSitePoster,
+  weatherAppPoster,
+  othersPoster,
 };

@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
   return (
-    <div className="flex flex-col py-8 justify-center items-center px-72 max-xl:px-40 max-lg:px-20 max-md:px-20 max-sm:px-5 transition-all duration-1000">
+    <div className="flex overflow-hidden flex-col py-8 justify-center items-center mx-56 max-xl:mx-32 max-lg:mx-10 max-md:mx-12 max-sm:mx-6 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Portfolio

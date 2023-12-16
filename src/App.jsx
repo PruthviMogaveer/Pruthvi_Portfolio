@@ -1,4 +1,13 @@
-import { About, Education, Footer, Header, Hero, Portfolio, Skills } from "./components";
+import {
+  About,
+  Contact,
+  Education,
+  Footer,
+  Header,
+  Hero,
+  Portfolio,
+  Skills,
+} from "./components";
 
 function App() {
   return (
@@ -11,7 +20,7 @@ function App() {
           <Hero />
         </section>
         <section id="about" className="h-full ">
-          <About/>
+          <About />
         </section>
         <section id="education" className="h-full">
           <Education />
@@ -23,7 +32,7 @@ function App() {
           <Portfolio />
         </section>
         <section id="contact-me" className="">
-          fdk
+          <Contact />
         </section>
       </div>
       <div id="footer" className="relative">

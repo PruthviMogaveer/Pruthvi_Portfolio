@@ -8,6 +8,7 @@ import About from "./sections/About";
 import Education from "./sections/Education";
 import Skills from "./sections/skills/Skills";
 import Portfolio from "./sections/portfolio/Portfolio";
+import Contact from "./sections/Contact";
 
 export {
   ProfileImage,
@@ -20,4 +21,5 @@ export {
   Education,
   Skills,
   Portfolio,
+  Contact,
 };

@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className=" w-32 flex flex-col justify-start items-center space-y-1">
             <h3 className="text-secondary dark:text-lightwhite font-montserrat text-3xl font-bold">
-              10+
+              8+
             </h3>
             <span className="text-slate-700 dark:text-slate-400 font-montserrat text-sm font-thin text-center">
               Projects Completed

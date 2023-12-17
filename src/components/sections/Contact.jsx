@@ -6,16 +6,20 @@ import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { contactDetail } from "../../constant/constant";
+import { useState } from "react";
 
 const Contact = () => {
   const form = useRef();
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
+    setLoading(true);
     emailjs
       .sendForm(
         "service_pou5xe2",
@@ -25,10 +29,12 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setLoading(false);
+          reset()
         },
         (error) => {
-          console.log(error.text);
+          setLoading(false);
+          reset()
         }
       );
   };
@@ -115,7 +121,7 @@ const Contact = () => {
             )}
           </div>
           <Button type="submit" className="rounded-[3px]">
-            Submit
+            {loading ? "Submiting...." : "Submit"}
           </Button>
         </form>
       </div>

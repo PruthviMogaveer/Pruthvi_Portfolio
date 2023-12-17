@@ -23,6 +23,13 @@ import {
   othersPoster,
 } from "../assets";
 
+// Contact
+const contactDetail = {
+  phone: "+91 7892251871",
+  email: "pruthvimogaveer18@gmail.com",
+  location: "Saligrama, Udupi, Karnataka - 576225"
+};
+
 // Nav items
 const navItems = [
   {
@@ -255,4 +262,5 @@ export {
   database,
   otherSkills,
   projects,
+  contactDetail,
 };

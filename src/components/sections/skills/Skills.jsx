@@ -9,7 +9,7 @@ import SkillList from "../skills/SkillList";
 
 const Skills = () => {
   return (
-    <div className="flex flex-col py-8 justify-center items-center px-72 max-xl:px-40 max-lg:px-20 max-md:px-20 max-sm:px-5 transition-all duration-1000">
+    <div className="flex flex-col justify-center items-center px-72 max-xl:px-40 max-lg:px-20 max-md:px-20 max-sm:px-5 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Skills

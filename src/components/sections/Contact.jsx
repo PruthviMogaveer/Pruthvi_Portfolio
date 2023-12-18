@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col py-2 pb-12 justify-center items-center px-80 max-lg:px-0 max-md:px-20 transition-all duration-1000">
+    <div className="flex flex-col py-2  justify-center items-center px-80 max-lg:px-0 max-md:px-20 transition-all duration-1000">
       <div className="flex flex-col justify-center items-center">
         <p className="text-2xl font-bold text-secondary dark:text-lightwhite">
           Contact Me
@@ -49,7 +49,7 @@ const Contact = () => {
           Get in touch
         </h4>
       </div>
-      <div className="flex my-10 md:space-x-12 max-md:flex-col-reverse max-md:items-center">
+      <div className="flex my-20 md:space-x-12 max-md:flex-col-reverse max-md:items-center">
         <div className="flex flex-col justify-center space-y-4 max-md:mt-16">
           <div className="flex space-x-4">
             <CallIcon className="text-slate-800 dark:text-slate-100" />

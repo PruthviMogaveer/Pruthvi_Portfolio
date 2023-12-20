@@ -7,6 +7,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { contactDetail } from "../../constant/constant";
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const form = useRef();
@@ -30,11 +32,13 @@ const Contact = () => {
       .then(
         (result) => {
           setLoading(false);
-          reset()
+          toast.info("Message sent succesfully!");
+          reset();
         },
         (error) => {
           setLoading(false);
-          reset()
+          toast.error("Something went wrong, messege not sent!");
+          reset();
         }
       );
   };
@@ -49,7 +53,7 @@ const Contact = () => {
           Get in touch
         </h4>
       </div>
-      <div className="flex my-20 md:space-x-12 max-md:flex-col-reverse max-md:items-center">
+      <div className="flex my-16 md:space-x-12 max-md:flex-col-reverse max-md:items-center">
         <div className="flex flex-col justify-center space-y-4 max-md:mt-16">
           <div className="flex space-x-4">
             <CallIcon className="text-slate-800 dark:text-slate-100" />
@@ -123,6 +127,7 @@ const Contact = () => {
           <Button type="submit" className="rounded-[3px]">
             {loading ? "Submiting...." : "Submit"}
           </Button>
+          <ToastContainer className="max-sm:w-72 max-sm:fixed max-sm:top-5" />
         </form>
       </div>
     </div>

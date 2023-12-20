@@ -8,26 +8,33 @@ import {
   Portfolio,
   Skills,
 } from "./components";
+import Fade from "react-reveal/Fade";
 
 function App() {
   return (
     <div className="w-full">
       <div className="w-full fixed md:top-0 max-md:bottom-0 max-md:bg-lightwhite bg-white dark:bg-secondary dark:max-md:bg-secondary max-md:rounded-t-xl max-md:shadow-menu dark:max-md:shadow-darkmenu z-10">
-        <Header />
+        <Fade top duration={1300}>
+          <Header />
+        </Fade>
       </div>
       <div className="relative w-full min-h-screen flex flex-col space-y-20">
         <section id="home" className="h-[36rem] ">
           <Hero />
         </section>
+
         <section id="about" className="h-full ">
           <About />
         </section>
+
         <section id="education" className="h-full">
           <Education />
         </section>
+
         <section id="skills" className="h-full">
           <Skills />
         </section>
+
         <section id="portfolio" className="">
           <Portfolio />
         </section>
@@ -36,7 +43,9 @@ function App() {
         </section>
       </div>
       <div id="footer" className="relative">
-        <Footer />
+        <Fade bottom duration={1300}>
+          <Footer />
+        </Fade>
       </div>
     </div>
   );

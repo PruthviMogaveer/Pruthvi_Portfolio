@@ -54,7 +54,7 @@ const Header = () => {
             className={`${
               menuOpen
                 ? "transition-all duration-1000 max-md:absolute max-md:bottom-5 max-md:left-0 max-md:my-6 max-md:justify-center max-md:items-center max-md: max-md:w-full max-md:px-10"
-                : "transition-all duration-1000 max-md:absolute max-md:-bottom-32 max-md:left-0 max-md:my-6 max-md:justify-center max-md:items-center max-md: max-md:w-full max-md:px-10"
+                : "transition-all duration-1000 max-md:absolute max-md:-bottom-60 max-md:left-0 max-md:my-6 max-md:justify-center max-md:items-center max-md: max-md:w-full max-md:px-10"
             } relative flex flex-wrap space-x-6 `}
           >
             {navItems.map((item) => (

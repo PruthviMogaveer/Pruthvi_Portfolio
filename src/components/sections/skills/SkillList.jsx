@@ -2,7 +2,7 @@ import React from "react";
 import useWindowWidth from "../../../hooks/useWindowWidth";
 
 const SkillList = ({ skill }) => {
-    const windowWidth = useWindowWidth()
+  const windowWidth = useWindowWidth();
   return (
     <>
       <div

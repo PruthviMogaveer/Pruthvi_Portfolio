@@ -7,7 +7,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Button from "./components/Button.jsx";
 import PageNotFound from "./components/PageNotFound.jsx";
 
 const router = createBrowserRouter([
@@ -16,7 +15,7 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "*",
+    path: "/*",
     element: <PageNotFound />,
   },
 ]);

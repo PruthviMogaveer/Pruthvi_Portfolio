@@ -93,9 +93,6 @@ const Hero = () => {
               smooth={true}
               offset={offset}
               duration={500}
-              activeClass=" text-[#6E58E0] dark:text-[#6E58E0] border-b-2 border-[#6E58E0] transition-all duration-100 text-base font-medium"
-              className={`cursor-pointer text-secondary dark:text-lightwhite hover:text-primary dark:hover:text-primary transition-all duration-100 text-base font-medium
-                  `}
             >
               <Button
                 className={

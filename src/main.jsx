@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
+        path:"/",
+        element:<App/>
+      },
+      {
         path: "/h",
         element: <PageNotFound />,
       },

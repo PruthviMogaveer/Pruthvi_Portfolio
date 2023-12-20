@@ -2,29 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import PageNotFound from "./components/PageNotFound.jsx";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/a",
-    element: <PageNotFound />,
-  },
-]);
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <App />
-    </BrowserRouter> */}
-    <RouterProvider router={router} />
+    </BrowserRouter>
   </React.StrictMode>
 );

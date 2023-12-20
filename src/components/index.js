@@ -9,8 +9,10 @@ import Education from "./sections/Education";
 import Skills from "./sections/skills/Skills";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Contact from "./sections/Contact";
+import PageNotFound from "./PageNotFound"
 
 export {
+  PageNotFound,
   ProfileImage,
   DarkModeToggle,
   Button,

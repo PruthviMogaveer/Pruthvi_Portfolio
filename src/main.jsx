@@ -1,13 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import {PageNotFound} from "./components";
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <App />,
+    errorElement: <PageNotFound />
+  }
+])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <App />
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );

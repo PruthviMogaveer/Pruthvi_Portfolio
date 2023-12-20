@@ -13,14 +13,13 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [
-      
+    
+  },
       {
         path: "*",
         element: <PageNotFound />,
       },
-    ],
-  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -21,8 +21,10 @@ import fushionShoesPoster from "./images/fusion_shoes_poster.png";
 import movieSitePoster from "./images/movie_site_poster.png";
 import weatherAppPoster from "./images/weather_app_poster.png";
 import othersPoster from "./images/others_poster.jpg";
+import pageNotFound from "./images/404.png";
 
 export {
+  pageNotFound,
   profile,
   htmlIcon,
   bootstrapIcon,

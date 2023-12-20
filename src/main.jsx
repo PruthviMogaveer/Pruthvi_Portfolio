@@ -12,7 +12,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <PageNotFound/>,
     children: [
       {
         path:"/",

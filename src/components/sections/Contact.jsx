@@ -130,7 +130,7 @@ const Contact = () => {
           <Button type="submit" className="rounded-[3px]">
             {loading ? "Submiting...." : "Submit"}
           </Button>
-          <ToastContainer className="max-sm:w-72 max-sm:fixed max-sm:top-5" />
+          <ToastContainer className="max-sm:w-72 fixed top-5" />
         </form>
       </div>
     </div>

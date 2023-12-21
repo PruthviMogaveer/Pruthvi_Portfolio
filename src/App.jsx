@@ -39,7 +39,9 @@ function App() {
           <Portfolio />
         </section>
         <section id="contact-me" className="">
-          <Contact />
+          <Fade left duration={1300}>
+            <Contact />
+          </Fade>
         </section>
       </div>
       <div id="footer" className="relative">

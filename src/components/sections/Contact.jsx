@@ -10,6 +10,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Fade from "react-reveal/Fade";
+import conf from "../../../conf/conf";
 
 const Contact = () => {
   const form = useRef();
@@ -24,12 +25,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     setLoading(true);
     emailjs
-      .sendForm(
-        "service_pou5xe2",
-        "template_wah5goh",
-        form.current,
-        "jxp9-W7ulF7oPB9sX"
-      )
+      .sendForm(conf.serviceId, conf.templateId, form.current, conf.publicKey)
       .then(
         (result) => {
           setLoading(false);
@@ -130,7 +126,7 @@ const Contact = () => {
           <Button type="submit" className="rounded-[3px]">
             {loading ? "Submiting...." : "Submit"}
           </Button>
-          <ToastContainer className="max-sm:w-72 fixed top-5" />
+          <ToastContainer className="max-sm:w-72 max-sm:fixed max-sm:top-5" />
         </form>
       </div>
     </div>

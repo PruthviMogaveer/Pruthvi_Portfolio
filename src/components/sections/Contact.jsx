@@ -25,7 +25,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     setLoading(true);
     emailjs
-      .sendForm(conf.serviceId, conf.templateId, form.current, conf.publicKey)
+      .sendForm(
+        "service_pou5xe2",
+        "template_wah5goh",
+        form.current,
+        "jxp9-W7ulF7oPB9sX"
+      )
       .then(
         (result) => {
           setLoading(false);

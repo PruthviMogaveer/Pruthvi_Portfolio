@@ -27,7 +27,7 @@ const Hero = () => {
   }, [windowWidth]);
 
   return (
-    <div className=" flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-start items-center relative px-64 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000">
+    <div className=" flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-between items-center relative px-60 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000">
       <Fade left duration={1300}>
         <div className="flex flex-row justify-start space-x-10 items-center px-10 w-[32rem] max-lg:w-[30rem] max-sm:w-96">
           {windowWidth > 768 && (

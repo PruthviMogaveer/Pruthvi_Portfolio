@@ -31,7 +31,7 @@ export default function PWAPrompt() {
     if (!showPrompt) return null;
 
     return (
-        <div className="pwa-prompt">
+        <div className="pwa-prompt max-md:w-[85%]">
             <p>Install this app for quick access</p>
             <div className='flex justify-center items-center gap-2 mt-2 '>
                 <button onClick={handleInstallClick} className='bg-primary text-white px-4 py-2 rounded-md'>Install</button>

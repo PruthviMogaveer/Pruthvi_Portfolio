@@ -19,7 +19,7 @@ export default defineConfig({
         short_name: 'Pruthvi',
         description: 'Pruthvi Portfolio Website',
         theme_color: '#ffffff',
-        background_color: '#ffffff',
+        background_color: '#6E58E0',
         display: 'standalone',
         scope: '/',
         start_url: '/',

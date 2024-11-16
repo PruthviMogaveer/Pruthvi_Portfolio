@@ -18,7 +18,7 @@ export default defineConfig({
         name: 'Pruthvi Portfolio',
         short_name: 'Pruthvi',
         description: 'Pruthvi Portfolio Website',
-        theme_color: '#ffffff',
+        theme_color: '#6E58E0',
         background_color: '#6E58E0',
         display: 'standalone',
         scope: '/',

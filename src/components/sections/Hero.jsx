@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Button, ProfileImage } from "../";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { TypeAnimation } from "react-type-animation";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
@@ -35,10 +32,10 @@ const Hero = () => {
               <ul className=" flex flex-col flex-wrap space-y-5 relative">
                 <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
                   <a
-                    href="https://www.instagram.com/pruthvi__18/"
-                    aria-label="Visit my instagram"
+                    href="mailto:pruthvimogaveer18@gmail.com"
+                    aria-label="Send me an email"
                   >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faEnvelope} />
                   </a>
                 </li>
                 <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
@@ -80,9 +77,6 @@ const Hero = () => {
                 />
               </span>
             </h1>
-            {/* <h4 className="font-semibold text-lg max-lg:text-base text-slate-700 dark:text-slate-400">
-            Frontend developer
-          </h4> */}
             <p className="font-normal text-base max-lg:text-sm max-lg:font-medium text-slate-700 dark:text-slate-400 ">
               An enthusiastic and a passionate coder, always ready to adapt new
               skills.
@@ -115,10 +109,10 @@ const Hero = () => {
               <ul className=" flex flex-col flex-wrap space-y-5 relative">
                 <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">
                   <a
-                    href="https://www.instagram.com/pruthvi__18/"
-                    aria-label="Visit my instagram"
+                    href="mailto:pruthvimogaveer18@gmail.com"
+                    aria-label="Send me an email"
                   >
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <FontAwesomeIcon icon={faEnvelope} />
                   </a>
                 </li>
                 <li className=" text-primary text-lg w-fit cursor-pointer dark:hover:text-lightwhite hover:text-secondary hover:scale-125 transition-all duration-500">

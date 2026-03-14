@@ -1,33 +1,29 @@
 import React from "react";
 import useWindowWidth from "../../../hooks/useWindowWidth";
+import { motion } from "framer-motion";
 
 const SkillList = ({ skill }) => {
   const windowWidth = useWindowWidth();
   return (
-    <>
-      <div
-        className={`max-sm:border ${skill.color} flex dark:bg-[#0e0c19] max-sm:h-8 max-sm:justify-center justify-start items-center rounded-md max-sm:rounded w-60 max-sm:w-20 shadow-skillbox relative mx-2 my-5 h-12 hover:scale-95 transition-all duration-300`}
-      >
-        {windowWidth > 640 && (
-          <>
-            <div className="px-4 py-2">
-              <img
-                src={skill.icon}
-                alt={skill.desc}
-                className="object-cover w-[35px] "
-              />
-            </div>
-            <span className="border-r h-8 dark:border-slate-400 border-slate-600"></span>
-          </>
+    <motion.div
+      whileHover={{ y: -5, scale: 1.02 }}
+      className={`flex dark:bg-slate-800/40 bg-white items-center rounded-xl p-2 pr-4 shadow-sm hover:shadow-md border border-slate-100 dark:border-slate-700/50 transition-all duration-300 group cursor-default w-fit min-w-[140px] max-sm:min-w-[100px]`}
+    >
+      <div className="p-2 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+        {skill.reactIcon ? (
+          <div className="text-2xl">{skill.reactIcon}</div>
+        ) : (
+          <img
+            src={skill.icon}
+            alt={skill.desc}
+            className="object-contain w-6 h-6"
+          />
         )}
-
-        <div className="px-4 py-2 ">
-          <p className="text-md font-semibold max-sm:text-xs max-sm:font-medium text-slate-600 dark:text-slate-400">
-            {skill.desc}
-          </p>
-        </div>
       </div>
-    </>
+      <p className="text-sm font-semibold text-slate-700 dark:text-slate-300 ml-2 whitespace-nowrap">
+        {skill.desc}
+      </p>
+    </motion.div>
   );
 };
 

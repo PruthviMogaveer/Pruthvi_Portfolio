@@ -2,6 +2,7 @@ import {
   About,
   Contact,
   Education,
+  Experience,
   Footer,
   Header,
   Hero,
@@ -9,8 +10,8 @@ import {
   Skills,
 } from "./components";
 import Fade from "react-reveal/Fade";
-import PWAPrompt from './components/PWAPrompt';
-import OfflineNotification from './components/OfflineNotification';
+import PWAPrompt from "./components/PWAPrompt";
+import OfflineNotification from "./components/OfflineNotification";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <PWAPrompt />
       <OfflineNotification />
       <div className="w-full">
-        <div className="w-full fixed md:top-0 max-md:bottom-0 max-md:bg-lightwhite bg-white dark:bg-secondary dark:max-md:bg-secondary max-md:rounded-t-xl max-md:shadow-menu dark:max-md:shadow-darkmenu z-10">
+        <div className="w-full fixed md:top-0 max-md:bottom-0 max-md:bg-lightwhite bg-white dark:bg-secondary dark:max-md:bg-secondary max-md:rounded-t-xl max-md:shadow-menu dark:max-md:shadow-darkmenu z-50">
           <Fade top duration={1300}>
             <Header />
           </Fade>
@@ -30,6 +31,10 @@ function App() {
 
           <section id="about" className="h-full ">
             <About />
+          </section>
+
+          <section id="experience" className="h-full">
+            <Experience />
           </section>
 
           <section id="education" className="h-full">

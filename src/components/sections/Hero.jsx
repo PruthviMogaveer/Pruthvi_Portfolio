@@ -24,9 +24,21 @@ const Hero = () => {
   }, [windowWidth]);
 
   return (
-    <div className=" flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-between items-center relative px-60 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000">
+    <div className="relative flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-between items-center px-60 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000 overflow-hidden">
+      {/* Faded Grid Background */}
+      <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none">
+        <div
+          className="h-full w-full"
+          style={{
+            backgroundImage: `linear-gradient(to right, #6E58E0 1px, transparent 1px), linear-gradient(to bottom, #6E58E0 1px, transparent 1px)`,
+            backgroundSize: "40px 40px",
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 dark:via-secondary/50 to-white dark:to-secondary"></div>
+      </div>
+
       <Fade left duration={1300}>
-        <div className="flex flex-row justify-start space-x-10 items-center px-10 w-[32rem] max-lg:w-[30rem] max-sm:w-96">
+        <div className="relative z-10 flex flex-row justify-start space-x-10 items-center px-10 w-[32rem] max-lg:w-[30rem] max-sm:w-96">
           {windowWidth > 768 && (
             <div>
               <ul className=" flex flex-col flex-wrap space-y-5 relative">
@@ -58,28 +70,30 @@ const Hero = () => {
             </div>
           )}
 
-          <div className="flex flex-col space-y-3">
-            <h1 className="font-extrabold text-4xl text-primary max-lg:text-3xl">
-              <span className="block pb-3">Hi, I am </span>{" "}
-              <span className="inline-block pb-3">
+          <div className="flex flex-col space-y-3 w-full">
+            <h1 className="font-extrabold text-4xl text-primary max-lg:text-3xl max-md:text-2xl flex flex-wrap gap-x-3">
+              <span className="pb-3 whitespace-nowrap">Hi, I am </span>{" "}
+              <span className="inline-block pb-3 min-w-[300px]">
                 {" "}
                 <TypeAnimation
                   sequence={[
                     " Pruthvi Mogaveer",
                     1000,
-                    "Web developer",
+                    "Software Engineer",
                     1000,
-                    "Frontend developer",
+                    "Software Developer",
+                    1000,
+                    "Full Stack Developer",
                     1000,
                   ]}
                   speed={50}
                   repeat={Infinity}
+                  wrapper="span"
                 />
               </span>
             </h1>
-            <p className="font-normal text-base max-lg:text-sm max-lg:font-medium text-slate-700 dark:text-slate-400 ">
-              An enthusiastic and a passionate coder, always ready to adapt new
-              skills.
+            <p className="font-normal text-base max-lg:text-sm max-md:text-sm max-lg:font-medium text-slate-700 dark:text-slate-400 ">
+              Specializing in building scalable full-stack applications with a focus on modern web technologies and seamless user experiences.
             </p>
             <Link
               to="contact-me"
@@ -90,7 +104,7 @@ const Hero = () => {
             >
               <Button
                 className={
-                  "max-md:top-5 relative top-10 w-36 h-11 font-medium flex items-center justify-between rounded-[8px] hover:bg-primaryhover active:scale-90 transition-all duration-300"
+                  "w-36 h-11 font-medium flex items-center justify-between rounded-[8px] hover:bg-primaryhover active:scale-90 transition-all duration-300"
                 }
               >
                 Contact Me{" "}

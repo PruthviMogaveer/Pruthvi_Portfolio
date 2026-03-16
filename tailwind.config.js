@@ -19,6 +19,15 @@ export default {
         educationbox: "0px 5px 15px rgba(0, 0, 0, 0.35) ",
         skillbox: "0px 5px 15px rgba(0, 0, 0, 0.35) ",
       },
+      animation: {
+        'fade-in-out': 'fadeInOut 4s ease-in-out infinite',
+      },
+      keyframes: {
+        fadeInOut: {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '0.8' },
+        }
+      },
     },
   },
   plugins: [],

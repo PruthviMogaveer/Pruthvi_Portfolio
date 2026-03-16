@@ -25,20 +25,8 @@ const Hero = () => {
 
   return (
     <div className="relative flex flex-wrap max-md:py-6 pt-16 max-md:flex-col-reverse justify-between items-center px-60 max-xl:px-36 max-lg:px-10 max-md:px-0 max-lg:justify-around h-full transition-all duration-1000 overflow-hidden">
-      {/* Faded Grid Background */}
-      <div className="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage: `linear-gradient(to right, #6E58E0 1px, transparent 1px), linear-gradient(to bottom, #6E58E0 1px, transparent 1px)`,
-            backgroundSize: "40px 40px",
-          }}
-        ></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/50 dark:via-secondary/50 to-white dark:to-secondary"></div>
-      </div>
-
       <Fade left duration={1300}>
-        <div className="relative z-10 flex flex-row justify-start space-x-10 items-center px-10 w-[32rem] max-lg:w-[30rem] max-sm:w-96">
+        <div className="relative z-10 flex flex-row justify-start space-x-10 items-center px-10 w-[33rem] max-lg:w-[30rem] max-sm:w-96">
           {windowWidth > 768 && (
             <div>
               <ul className=" flex flex-col flex-wrap space-y-5 relative">
@@ -93,7 +81,8 @@ const Hero = () => {
               </span>
             </h1>
             <p className="font-normal text-base max-lg:text-sm max-md:text-sm max-lg:font-medium text-slate-700 dark:text-slate-400 ">
-              Specializing in building scalable full-stack applications with a focus on modern web technologies and seamless user experiences.
+              Specializing in building scalable full-stack applications with a
+              focus on modern web technologies and seamless user experiences.
             </p>
             <Link
               to="contact-me"

@@ -31,10 +31,10 @@ const Skills = () => {
   const SkillSection = ({ title, skills }) => (
     <motion.div
       variants={itemVariants}
-      className="flex flex-col w-full bg-slate-50/50 dark:bg-slate-800/20 p-6 rounded-3xl border border-slate-100 dark:border-slate-700/50 backdrop-blur-sm"
+      className="flex flex-col w-full dark:bg-slate-800/30 bg-slate-50/50 p-6 rounded-2xl border border-slate-200 dark:border-slate-700/50 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300"
     >
-      <h3 className="text-xl font-bold text-secondary dark:text-lightwhite mb-6 flex items-center gap-2 max-md:text-lg">
-        <span className="w-2 h-6 bg-primary rounded-full"></span>
+      <h3 className="text-xl font-bold text-secondary dark:text-lightwhite mb-6 flex items-center gap-2">
+        <span className="w-3 h-8 bg-gradient-to-r from-primary to-purple-600 rounded-full shadow-lg"></span>
         {title}
       </h3>
       <div className="flex flex-wrap gap-4">

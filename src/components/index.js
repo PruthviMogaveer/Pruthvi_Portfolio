@@ -11,8 +11,10 @@ import Skills from "./sections/skills/Skills";
 import Portfolio from "./sections/portfolio/Portfolio";
 import Contact from "./sections/Contact";
 import PageNotFound from "./PageNotFound"
+import AnimatedBackground from "./AnimatedBackground";
 
 export {
+  AnimatedBackground,
   PageNotFound,
   ProfileImage,
   DarkModeToggle,
